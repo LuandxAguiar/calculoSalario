@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">calculoSalario</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+    <string name="infSalario">Informe o Salário</string>
+    <string name="infDependentes">Informe o numero de dependentes </string>
+    <string name="planoSaude">Você tem plano de saúde</string>
+    <string name="valeTrans">Você tem Vale Transportes</string>
+    <string name="valeAlimenta">Você tem Vale Alimentação</string>
+    <string name="valeRefeicao">Você tem Vale Refeição</string>
+    <string name="stan">Standard</string>
+    <string name="basico">Básico</string>
+    <string name="sup">Super</string>
+    <string name="master">Master</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+</resources>

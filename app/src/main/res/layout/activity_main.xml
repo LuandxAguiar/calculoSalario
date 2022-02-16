@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcule seu Salário"
+        android:textAlignment="center"
+        android:background="@color/verde"/>
+
+
+    <EditText
+
+        android:id="@+id/salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/infSalario"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center" />
+
+    <EditText
+
+        android:id="@+id/numDependentes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/infDependentes"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4px"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/planoSaude"
+            android:textAlignment="center"
+            android:layout_gravity="center"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+
+                android:id="@+id/planoSim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/sim"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                />
+
+            <RadioButton android:id="@+id/planoNao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nao"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="10px"
+                />
+        </RadioGroup>
+
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:background="@color/verde"
+        >
+
+        <RadioButton
+            android:id="@+id/pStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/stan"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+
+            />
+
+        <RadioButton android:id="@+id/pBasico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/basico"
+            android:onClick="onRadioButtonClicked"
+            android:layout_margin="10px"/>
+        <RadioButton
+            android:id="@+id/pSuper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/sup"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            />
+
+        <RadioButton android:id="@+id/pMaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/master"
+            android:onClick="onRadioButtonClicked"
+            android:layout_margin="10px"/>
+    </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4px"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/valeTrans"
+            android:textAlignment="center"
+            android:layout_gravity="center"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/vtSim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sim"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                />
+
+            <RadioButton android:id="@+id/vtNao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Não"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="10px"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4px"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Você tem Vale Alimentação"
+            android:textAlignment="center"
+            android:layout_gravity="center"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/vaSim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sim"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                />
+
+            <RadioButton android:id="@+id/vaNao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Não"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="10px"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4px"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Você tem Vale Refeição     "
+            android:textAlignment="center"
+            android:layout_gravity="center"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/vrSim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sim"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                />
+
+            <RadioButton android:id="@+id/vrNao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Não"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="10px"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_calcular"
+            android:text="@string/calcular"
+            android:layout_weight="2"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_limpar"
+            android:layout_marginLeft="5dp"
+            android:text="@string/limpar"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
