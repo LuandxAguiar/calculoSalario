@@ -1,0 +1,10 @@
+#Tue Feb 15 20:13:26 BRT 2022
+base.2=C\:\\Users\\TecDevNoite\\AndroidStudioProjects\\calculoSalario\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+path.2=1/classes.dex
+base.1=C\:\\Users\\TecDevNoite\\AndroidStudioProjects\\calculoSalario\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=C\:\\Users\\TecDevNoite\\AndroidStudioProjects\\calculoSalario\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

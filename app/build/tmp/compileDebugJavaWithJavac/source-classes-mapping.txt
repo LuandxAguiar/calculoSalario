@@ -1,0 +1,4 @@
+br/senai/sp/cotia/calculosalario/MainActivity.java
+ br.senai.sp.cotia.calculosalario.MainActivity
+br/senai/sp/cotia/calculosalario/BuildConfig.java
+ br.senai.sp.cotia.calculosalario.BuildConfig
